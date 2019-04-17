@@ -1,0 +1,95 @@
+.sdp {
+    margin-top: 3px;
+    width: 315px;
+    background-color: whitesmoke;
+    border: 1px lightgray solid;
+}
+
+.sdp-header {
+    display: inline-flex;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.sdp-weekday-header {
+    border-bottom: 1px lightgray solid;
+}
+
+.sdp-weekday-body {
+    color: #17a2b8;
+    font-style: italic;
+    font-size: 21px;
+    display: flex;
+    margin-left: 8px;
+}
+
+.sdp-weekday {
+    margin-right: 5px;
+    width: 38px;
+    text-align: center;
+}
+
+.sdp-calendar {
+    background-color: white;
+    text-align: center;
+}
+
+.sdp-week {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    margin-left: 8px;
+    background-color: white;
+}
+
+.sdp-day {
+    font-size: 22px;
+    width: 38px;
+    margin-right: 5px;
+    color: black;
+    text-align: center;
+}
+
+.sdp-day:hover {
+    background-color: beige;
+    cursor: pointer;
+}
+
+.sdp-day-selected {
+    font-size: 22px;
+    width: 38px;
+    margin-right: 5px;
+    color: black;
+    text-align: center;
+    background-color: azure;
+    border: 1px red solid;
+}
+
+.sdp-day-condensed {
+    font-size: 22px;
+    width: 38px;
+    margin-right: 5px;
+    color: darkgray;
+    font-style: italic;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sdp-day-condensed:hover {
+    font-size: 22px;
+    width: 38px;
+    margin-right: 5px;
+    color: darkgray;
+    background-color: #dedede;
+    font-style: italic;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sdp-select {
+    width: 120px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 2px;
+    font-size: 20px;
+    margin-left: 21px;
+}
