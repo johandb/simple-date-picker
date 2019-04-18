@@ -11,7 +11,7 @@ import { SimpleDatePickerComponent } from 'projects/simple-date-picker/src/compo
 @NgModule({
     declarations: [
         AppComponent,
-        SimpleDatePickerComponent
+        SimpleDatePickerComponent,
     ],
     imports: [
         BrowserModule,

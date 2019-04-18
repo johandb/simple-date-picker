@@ -12,13 +12,11 @@ import { DatePipe } from '@angular/common';
 export class AppComponent implements OnInit {
 
     model: any = {};
-    date: string;
-    currentDate: string;
 
     constructor(private datePipe: DatePipe) { }
 
     ngOnInit(): void {
-        //this.model.currentDate = this.datePipe.transform(new Date(), "dd-MM-yyyy");
+        this.model.currentDate = this.datePipe.transform(new Date(), "dd-MM-yyyy");
         // this.model.currentDate = this.datePipe.transform(new Date(), "yyyy-MM-dd");
         console.log('model:', this.model);
     }
