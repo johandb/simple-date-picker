@@ -1,6 +1,6 @@
 {
     "name": "simply-date-picker",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A simple date picker module for Angular 7+",
     "author": {
         "name": "Johan den Boer",

@@ -30,6 +30,7 @@ export class SimpleDatePickerComponent implements OnInit {
     }
 
     ngOnInit() {
+        //console.log('date1:', this.date);
         if (this.date === undefined) {
             this.date = this.datePipe.transform(new Date(), 'dd-MM-yyyy');
             this.dateFormat = "dd-MM-yyyy";
@@ -38,7 +39,7 @@ export class SimpleDatePickerComponent implements OnInit {
             this.dateFormat = "dd-MM-yyyy";
         }
         this.parseDate();
-        //console.log('date:', this.date, ', length:', this.date.length);
+        //console.log('date2:', this.date, ', length:', this.date.length);
         this.build();
     }
 
@@ -148,6 +149,7 @@ export class SimpleDatePickerComponent implements OnInit {
         //console.log('you selected :', d);
         this.date = this.datePipe.transform(new Date(d.year, d.month - 1, d.day), this.dateFormat);
         this.parseDate();
+        this.build();
         this.showDatePicker = false;
         this.dateChange.emit(this.date);
     }

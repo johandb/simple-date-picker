@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatePipe } from '@angular/common';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
@@ -12,16 +13,23 @@ import { DatePipe } from '@angular/common';
 export class AppComponent implements OnInit {
 
     model: any = {};
+    myForm: FormGroup;
 
-    constructor(private datePipe: DatePipe) { }
+    constructor(private datePipe: DatePipe, private formBuilder: FormBuilder) { }
 
     ngOnInit(): void {
-        this.model.currentDate = this.datePipe.transform(new Date(), "dd-MM-yyyy");
-        // this.model.currentDate = this.datePipe.transform(new Date(), "yyyy-MM-dd");
-        console.log('model:', this.model);
+
+        this.myForm = this.formBuilder.group({
+            currentDate: ['']
+        });
+    }
+
+    onDatePickerChange(dateValue: string): void {
+        console.log('onDatePickerChange:', dateValue);
+        this.myForm.get('currentDate').setValue(dateValue);
     }
 
     onSubmit() {
-        console.log('onSubmit:', this.model);
+        console.log('onSubmit:', this.myForm.value);
     }
 }

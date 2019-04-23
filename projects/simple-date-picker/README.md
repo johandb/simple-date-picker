@@ -15,9 +15,22 @@ A small library that adds a simple date picker to your forms
 ## Usage
 ```html
 
-<simple-date-picker #dp [(date)]="model.currentDate"></simple-date-picker>
-
-<simple-date-picker #dp [(date)]="model.currentDate" dateFormat="dd-MM-yyyy"></simple-date-picker>
+<div class="container">
+    <h1>Date Picker Demo</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <form [formGroup]="myForm" autocomplete="off">
+                <div class="form-group">
+                    <label for="currentDate">Datum</label>
+                    <input (click)="dp.toggle()" formControlName="currentDate" placeholder="dd-mm-yyyy" value="currentDate" class="form-control">
+                    <simple-date-picker #dp (dateChange)="onDatePickerChange($event)" [date]="currentDate"></simple-date-picker>
+                </div>
+            </form>
+            <button (click)="onSubmit()" class="btn btn-primary">Ok</button>
+        </div>
+        <div class="col-md-8"></div>
+    </div>
+</div>
 
 date formats supported are : dd-MM-yyyy and yyyy-MM-dd
 
