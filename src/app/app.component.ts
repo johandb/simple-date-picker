@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
 
     model: any = {};
     myForm: FormGroup;
+    currentDate: string;
 
     constructor(private datePipe: DatePipe, private formBuilder: FormBuilder) { }
 
