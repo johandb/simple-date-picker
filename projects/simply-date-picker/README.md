@@ -1,4 +1,4 @@
-SimpleDatePicker
+SimplyDatePicker
 ================
 
 A small library that adds a simple date picker to your forms

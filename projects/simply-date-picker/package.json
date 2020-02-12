@@ -1,15 +1,16 @@
 {
     "name": "simply-date-picker",
-    "version": "0.0.2",
-    "description": "A simple date picker module for Angular 7+",
+    "version": "0.0.3",
+    "description": "A simple date picker module for Angular 9+",
     "author": {
         "name": "Johan den Boer",
         "email": "johanj.denboer@gmail.com"
     },
-    "peerDependencies": {
-        "@angular/common": "^7.1.0",
-        "@angular/core": "^7.1.0"
-    },
+	"peerDependencies": {
+		"@angular/common": "^9.0.0",
+		"@angular/core": "^9.0.0",
+		"tslib": "^1.10.0"
+	},
     "keywords": ["datepicker", "date", "angular"],
     "license": "MIT",
     "repository": {

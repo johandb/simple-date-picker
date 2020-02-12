@@ -4,13 +4,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "date-picker",
+      "lib",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "date-picker",
+      "lib",
       "kebab-case"
     ]
   }

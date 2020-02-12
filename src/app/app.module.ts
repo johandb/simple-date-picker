@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
-import { SimpleDatePickerComponent } from 'projects/simple-date-picker/src/components/simple-date-picker.component';
+import { SimpleDatePickerComponent } from 'projects/simply-date-picker/src/components/simple-date-picker.component';
 
 @NgModule({
     declarations: [
